@@ -127,6 +127,30 @@ body {
   -moz-animation-delay: -0.33s;
   animation-delay: -0.33s; }
 
+.loader-inverseCircles {
+  border-radius: 50px;
+  border: 6px solid rgba(255, 255, 255, 0.2);
+  border-top-color: rgba(255,255,255,0.5);
+  border-left-color: rgba(255,255,255,0.5);
+  -webkit-animation: spinreverse 1s linear infinite;
+  -moz-animation: spinreverse 1s linear infinite;
+  animation: spinreverse 1s linear infinite; }
+
+.loader-inverseCircles:after {
+  content: '';
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  bottom: -6px;
+  right: -6px;
+  border-radius: 50px;
+  border: 6px solid transparent;
+  border-top-color: rgba(255,255,255,0.5);
+  border-left-color: rgba(255,255,255,0.5);
+  -webkit-animation: spin .6s linear infinite;
+  -moz-animation: spin .6s linear infinite;
+  animation: spin .6s linear infinite; }
+
 /* Animations */
 @-webkit-keyframes spin {
   from {
